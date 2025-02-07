@@ -8,13 +8,13 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium rounded-full bg-accent/10 text-accent animate-fade-in">
-            #1 Startup Accelerator in India
+            BSIC - Building a Sustainable Innovation Community
           </span>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-up bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Accelerate Your Startup Growth
+            Bihar Startup Incubation Centre
           </h1>
           <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Join India's leading startup accelerator program and get access to mentorship, funding, and resources to scale your business.
+            Join Bihar's leading startup incubation center and get access to mentorship, funding, and resources to scale your business.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <Button size="lg" className="text-lg px-8 group">

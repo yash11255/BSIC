@@ -13,30 +13,30 @@ export const Portfolio = () => {
   } | null>(null);
 
   const partners = [
-    { name: "Partner 1", logo: "/placeholder.svg" },
-    { name: "Partner 2", logo: "/placeholder.svg" },
-    { name: "Partner 3", logo: "/placeholder.svg" },
-    { name: "Partner 4", logo: "/placeholder.svg" },
-    { name: "Partner 5", logo: "/placeholder.svg" },
+    { name: "Bihar Government", logo: "/placeholder.svg" },
+    { name: "IIT Patna", logo: "/placeholder.svg" },
+    { name: "NIT Patna", logo: "/placeholder.svg" },
+    { name: "BIT Mesra", logo: "/placeholder.svg" },
+    { name: "Startup Bihar", logo: "/placeholder.svg" },
   ];
 
   const successStories = [
     {
-      name: "TechStart Innovation",
-      description: "A revolutionary AI-powered startup transforming healthcare.",
-      details: "Founded in 2021, TechStart Innovation has raised $5M in seed funding and is currently serving over 100 healthcare institutions across the country.",
+      name: "EduTech Bihar",
+      description: "Making quality education accessible to rural Bihar.",
+      details: "Started in 2021, EduTech Bihar has connected over 10,000 students with quality educators across Bihar.",
       image: "/placeholder.svg",
     },
     {
-      name: "GreenEco Solutions",
-      description: "Pioneering sustainable energy solutions for urban spaces.",
-      details: "GreenEco has successfully implemented their technology in 50+ cities, reducing carbon emissions by 40% in participating communities.",
+      name: "AgriConnect",
+      description: "Digital platform connecting farmers directly to markets.",
+      details: "Supporting over 5000 farmers across Bihar with better market access and prices.",
       image: "/placeholder.svg",
     },
     {
-      name: "FinTech Revolution",
-      description: "Democratizing financial services through blockchain technology.",
-      details: "With over 1 million users, FinTech Revolution has processed transactions worth $2B and continues to grow exponentially.",
+      name: "HealthTech Solutions",
+      description: "Telemedicine platform for rural healthcare access.",
+      details: "Providing healthcare access to over 100 villages through their innovative telemedicine platform.",
       image: "/placeholder.svg",
     },
   ];
@@ -45,7 +45,7 @@ export const Portfolio = () => {
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-8">Expert Mentorship From Industry Leaders</h2>
+          <h2 className="text-3xl font-bold mb-8">Our Partners & Network</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
             {partners.map((partner, index) => (
               <div

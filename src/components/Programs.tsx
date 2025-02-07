@@ -6,25 +6,25 @@ import { ArrowRight } from "lucide-react";
 export const Programs = () => {
   const programs = [
     {
-      title: "Seed Program",
-      description: "For early-stage startups looking for their first investment and mentorship.",
-      duration: "4 months",
-      funding: "Up to ₹50L",
-      icon: "🌱",
+      title: "Co-Working Space",
+      description: "Access to modern workspace with high-speed internet and meeting rooms.",
+      duration: "Flexible",
+      funding: "Starting at ₹2000/month",
+      icon: "🏢",
     },
     {
-      title: "Growth Program",
-      description: "For startups ready to scale their operations and enter new markets.",
+      title: "Incubation Program",
+      description: "Complete startup support with mentorship and funding opportunities.",
       duration: "6 months",
-      funding: "Up to ₹2Cr",
-      icon: "📈",
+      funding: "Up to ₹10L",
+      icon: "🚀",
     },
     {
-      title: "Scale Program",
-      description: "For established startups preparing for Series A and beyond.",
-      duration: "8 months",
-      funding: "Up to ₹5Cr",
-      icon: "🚀",
+      title: "Acceleration Program",
+      description: "For startups ready to scale with market access and investor connects.",
+      duration: "3 months",
+      funding: "Up to ₹25L",
+      icon: "📈",
     },
   ];
 
@@ -58,7 +58,7 @@ export const Programs = () => {
                   <span className="font-semibold">{program.duration}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Funding:</span>
+                  <span className="text-muted-foreground">Investment:</span>
                   <span className="font-semibold">{program.funding}</span>
                 </div>
               </div>

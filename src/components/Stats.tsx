@@ -1,9 +1,9 @@
 
 export const Stats = () => {
   const stats = [
-    { number: "116+", label: "Startups Accelerated", icon: "🏢" },
-    { number: "29+", label: "Active Mentors", icon: "👥" },
-    { number: "41k+", label: "Community Members", icon: "🌐" },
+    { number: "500+", label: "Startups Supported", icon: "🏢" },
+    { number: "50+", label: "Active Mentors", icon: "👥" },
+    { number: "100k+", label: "Community Members", icon: "🌐" },
   ];
 
   return (
@@ -11,9 +11,9 @@ export const Stats = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">
-            Awarded <span className="bg-yellow-200 px-2">"Best Accelerator Of India"</span> In 2022
+            Bihar's First <span className="bg-yellow-200 px-2">Startup Incubation Centre</span>
           </h2>
-          <p className="text-muted-foreground">by the Department of S&T</p>
+          <p className="text-muted-foreground">Supported by Bihar Government</p>
         </div>
         <div className="grid grid-cols-3 gap-8">
           {stats.map((stat, index) => (
@@ -31,20 +31,20 @@ export const Stats = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-2xl font-bold mb-8 text-center">What is India Accelerator</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">About BSIC</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Innovation Hub",
-                description: "Supporting startups through mentorship, networking & resources"
+                title: "Vision",
+                description: "To make Bihar the startup hub of Eastern India"
               },
               {
-                title: "Growth Platform",
-                description: "Enabling rapid scaling through strategic partnerships & funding"
+                title: "Mission",
+                description: "Supporting innovative startups through incubation & mentorship"
               },
               {
-                title: "Knowledge Center",
-                description: "Providing industry insights & expertise for sustainable growth"
+                title: "Goal",
+                description: "Creating a sustainable startup ecosystem in Bihar"
               }
             ].map((item, index) => (
               <div 
@@ -60,9 +60,9 @@ export const Stats = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-2xl font-bold mb-8 text-center">Explore Our Dynamic Workspaces</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Our Locations</h3>
           <div className="flex justify-between items-center">
-            {["Delhi", "Pune", "Mumbai", "Bangalore", "Noida"].map((city) => (
+            {["Patna", "Bhagalpur", "Muzaffarpur", "Gaya", "Darbhanga"].map((city) => (
               <div key={city} className="text-center">
                 <div className="w-16 h-16 mx-auto mb-2">
                   <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
