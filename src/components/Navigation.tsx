@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Send } from "lucide-react";
 import { useState } from "react";
 import { ApplyForm } from "./ApplyForm";
 import { Link } from "react-router-dom";
@@ -14,10 +14,15 @@ export const Navigation = () => {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Programs", href: "/#programs" },
-    { label: "Portfolio", href: "/#portfolio" },
+    { label: "Portfolio", href: "/portfolio" },
     { label: "Mentors", href: "/mentors" },
     { label: "About", href: "/about" },
   ];
+
+  const handleApplyClick = () => {
+    setIsApplyFormOpen(true);
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
@@ -28,7 +33,16 @@ export const Navigation = () => {
           </Link>
 
           {isMobile ? (
-            <div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="gradient"
+                size="sm"
+                onClick={handleApplyClick}
+                className="bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600 text-white font-medium px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              >
+                <Send className="w-4 h-4" />
+                Apply
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -38,27 +52,18 @@ export const Navigation = () => {
               </Button>
 
               {isMenuOpen && (
-                <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 py-4 animate-fade-in">
+                <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 py-4 animate-fade-in shadow-lg">
                   <div className="container mx-auto px-4 flex flex-col space-y-4">
                     {menuItems.map((item) => (
                       <Link
                         key={item.label}
                         to={item.href}
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-600 hover:text-primary transition-colors p-2 rounded-lg hover:bg-gray-50"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.label}
                       </Link>
                     ))}
-                    <Button 
-                      className="w-full"
-                      onClick={() => {
-                        setIsApplyFormOpen(true);
-                        setIsMenuOpen(false);
-                      }}
-                    >
-                      Apply Now
-                    </Button>
                   </div>
                 </div>
               )}
@@ -74,7 +79,13 @@ export const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <Button onClick={() => setIsApplyFormOpen(true)}>Apply Now</Button>
+              <Button
+                onClick={() => setIsApplyFormOpen(true)}
+                className="bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600 text-white font-medium px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              >
+                <Send className="w-4 h-4" />
+                Apply Now
+              </Button>
             </div>
           )}
         </div>
