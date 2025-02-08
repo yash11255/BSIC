@@ -1,33 +1,33 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-
 export const Hero = () => {
   return (
-    <section className="pt-32 pb-20 relative overflow-hidden bg-gradient-to-br from-[#9b87f5]/10 via-background to-[#7E69AB]/5">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium rounded-full bg-[#9b87f5]/10 text-[#6E59A5] animate-fade-in">
-            BSIC - Building a Sustainable Innovation Community
-          </span>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-up bg-gradient-to-r from-[#9b87f5] to-[#6E59A5] bg-clip-text text-transparent">
-            Bihar Startup Incubation Centre
+    <section className="relative min-h-screen flex items-center bg-background text-white">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 z-0 bg-[url('/lovable-uploads/cc2b17ac-d37f-4bc4-839b-c2341e83b815.png')] bg-cover bg-center"
+        style={{
+          backgroundBlendMode: 'overlay',
+          backgroundColor: 'rgba(0,0,0,0.7)'
+        }}
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-up">
+            BITO<br />
+            <span className="text-4xl md:text-6xl">
+              Start-up Incubation<br />
+              Centre (BSIC)
+            </span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Join Bihar's leading startup incubation center and get access to mentorship, funding, and resources to scale your business.
+          <p className="text-xl text-gray-300 mb-8 animate-fade-up max-w-2xl" style={{ animationDelay: "0.2s" }}>
+            Bihar's leading startup incubation center providing mentorship, funding, and resources to scale your business.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <Button size="lg" className="text-lg px-8 group bg-gradient-to-r from-[#9b87f5] to-[#6E59A5] hover:opacity-90 transition-all">
-              Apply Now
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 hover:bg-[#9b87f5]/5 border-[#9b87f5]/20">
-              Learn More
-            </Button>
-          </div>
         </div>
       </div>
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#9b87f510_1px,transparent_1px),linear-gradient(to_bottom,#9b87f510_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/90 pointer-events-none" />
     </section>
   );
 };
