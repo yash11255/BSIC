@@ -2,7 +2,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -20,27 +19,37 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "#1a1a1a",
-        foreground: "#ffffff",
+        border: "#E5DEFF",
+        input: "#FDE1D3",
+        ring: "rgb(177,127,73)",
+        background: "#FEFBF2",
+        foreground: "#373737",
         primary: {
           DEFAULT: "rgb(177,127,73)",
           foreground: "#ffffff",
         },
         secondary: {
           DEFAULT: "#FEFBF2",
-          foreground: "#1a1a1a",
+          foreground: "#373737",
         },
         muted: {
-          DEFAULT: "#373737",
-          foreground: "#a3a3a3",
+          DEFAULT: "#F1F0FB",
+          foreground: "#8E9196",
         },
         accent: {
-          DEFAULT: "rgb(177,127,73)",
-          foreground: "#ffffff",
+          DEFAULT: "#FEC6A1",
+          foreground: "#373737",
         },
+        soft: {
+          green: "#F2FCE2",
+          yellow: "#FEF7CD",
+          orange: "#FEC6A1",
+          purple: "#E5DEFF",
+          pink: "#FFDEE2",
+          peach: "#FDE1D3",
+          blue: "#D3E4FD",
+          gray: "#F1F0FB"
+        }
       },
       keyframes: {
         "fade-up": {
