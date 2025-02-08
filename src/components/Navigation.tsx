@@ -20,10 +20,10 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#9b87f5]/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-xl md:text-2xl font-bold text-primary">
+          <Link to="/" className="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#9b87f5] to-[#6E59A5] bg-clip-text text-transparent">
             BSIC
           </Link>
 
@@ -33,25 +33,26 @@ export const Navigation = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-[#6E59A5]"
               >
                 {isMenuOpen ? <X /> : <Menu />}
               </Button>
 
               {isMenuOpen && (
-                <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 py-4 animate-fade-in">
+                <div className="absolute top-full left-0 right-0 bg-white border-b border-[#9b87f5]/20 py-4 animate-fade-in">
                   <div className="container mx-auto px-4 flex flex-col space-y-4">
                     {menuItems.map((item) => (
                       <Link
                         key={item.label}
                         to={item.href}
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.label}
                       </Link>
                     ))}
                     <Button 
-                      className="w-full"
+                      className="w-full bg-gradient-to-r from-[#9b87f5] to-[#6E59A5] hover:opacity-90 transition-all"
                       onClick={() => {
                         setIsApplyFormOpen(true);
                         setIsMenuOpen(false);
@@ -69,12 +70,17 @@ export const Navigation = () => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-gray-600 hover:text-primary transition-colors"
+                  className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 >
                   {item.label}
                 </Link>
               ))}
-              <Button onClick={() => setIsApplyFormOpen(true)}>Apply Now</Button>
+              <Button 
+                className="bg-gradient-to-r from-[#9b87f5] to-[#6E59A5] hover:opacity-90 transition-all"
+                onClick={() => setIsApplyFormOpen(true)}
+              >
+                Apply Now
+              </Button>
             </div>
           )}
         </div>
