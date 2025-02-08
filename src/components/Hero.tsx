@@ -23,6 +23,14 @@ export const Hero = () => {
           <p className="text-xl text-gray-300 mb-8 animate-fade-up max-w-2xl" style={{ animationDelay: "0.2s" }}>
             Bihar's leading startup incubation center providing mentorship, funding, and resources to scale your business.
           </p>
+          <div className="flex gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-md transition-colors">
+              Apply Now
+            </button>
+            <button className="px-8 py-3 bg-secondary hover:bg-secondary/90 text-background rounded-md transition-colors">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
 
