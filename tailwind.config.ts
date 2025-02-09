@@ -20,11 +20,11 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "#1a1a1a",
-        foreground: "#ffffff",
+        border: "#e2d1c3",
+        input: "#e2d1c3",
+        ring: "rgb(177,127,73)",
+        background: "#ffffff",
+        foreground: "#1a1a1a",
         primary: {
           DEFAULT: "rgb(177,127,73)",
           foreground: "#ffffff",
@@ -34,12 +34,12 @@ export default {
           foreground: "#1a1a1a",
         },
         muted: {
-          DEFAULT: "#373737",
-          foreground: "#a3a3a3",
+          DEFAULT: "#f5f5f5",
+          foreground: "#737373",
         },
         accent: {
-          DEFAULT: "rgb(177,127,73)",
-          foreground: "#ffffff",
+          DEFAULT: "#FEC6A1",
+          foreground: "#1a1a1a",
         },
       },
       keyframes: {
@@ -61,10 +61,25 @@ export default {
             opacity: "1",
           },
         },
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
+        blob: "blob 7s infinite",
       },
     },
   },
