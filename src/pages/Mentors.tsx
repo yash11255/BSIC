@@ -1,7 +1,7 @@
 
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { LinkedIn, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const Mentors = () => {
   const mentors = [
@@ -59,7 +59,7 @@ const Mentors = () => {
                   <p className="text-gray-700 text-center mb-4">{mentor.bio}</p>
                   <div className="flex justify-center space-x-4">
                     <button className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
-                      <LinkedIn className="w-5 h-5 text-primary" />
+                      <Linkedin className="w-5 h-5 text-primary" />
                     </button>
                     <button className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
                       <Mail className="w-5 h-5 text-primary" />
