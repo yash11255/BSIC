@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Mentors from "./pages/Mentors";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
+import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/mentors" element={<Mentors />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

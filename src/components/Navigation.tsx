@@ -15,7 +15,7 @@ export const Navigation = () => {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Programs", href: "/programs" },
-    { label: "Portfolio", href: "/#portfolio" },
+    { label: "Portfolio", href: "/portfolio" },
     { label: "Mentors", href: "/mentors" },
     { label: "About", href: "/about" },
   ];
