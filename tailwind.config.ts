@@ -20,26 +20,26 @@ export default {
     },
     extend: {
       colors: {
-        border: "#e2d1c3",
-        input: "#e2d1c3",
-        ring: "#854D0E",
-        background: "#FFFBF5",
-        foreground: "#2D1810",
+        border: "#000000",
+        input: "#1A1F2C",
+        ring: "#403E43",
+        background: "#1A1F2C",
+        foreground: "#FFFFFF",
         primary: {
-          DEFAULT: "#854D0E",
-          foreground: "#FFFBF5",
+          DEFAULT: "#403E43",
+          foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#FEF3C7",
-          foreground: "#854D0E",
+          DEFAULT: "#222222",
+          foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#F7F4EF",
-          foreground: "#78350F",
+          DEFAULT: "#333333",
+          foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#FEF3C7",
-          foreground: "#854D0E",
+          DEFAULT: "#555555",
+          foreground: "#FFFFFF",
         },
       },
       keyframes: {
