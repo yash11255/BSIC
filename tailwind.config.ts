@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       colors: {
-        border: "#000000",
-        input: "#1A1F2C",
+        border: "#221F26",
+        input: "#2A2A2A",
         ring: "#403E43",
         background: "#1A1F2C",
         foreground: "#FFFFFF",
@@ -30,15 +30,15 @@ export default {
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#222222",
+          DEFAULT: "#221F26",
           foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#333333",
-          foreground: "#FFFFFF",
+          DEFAULT: "#2A2A2A",
+          foreground: "#E0E0E0",
         },
         accent: {
-          DEFAULT: "#555555",
+          DEFAULT: "#4A4A4A",
           foreground: "#FFFFFF",
         },
       },
@@ -85,3 +85,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
