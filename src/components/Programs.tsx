@@ -32,7 +32,7 @@ export const Programs = () => {
     <section className="py-20 relative overflow-hidden" id="programs">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium rounded-full bg-accent/10 text-accent">
+          <span className="inlne-block px-4 py-1.5 mb-4 text-sm font-medium rounded-full bg-accent/10 text-accent">
             Our Programs
           </span>
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">

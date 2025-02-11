@@ -123,7 +123,7 @@ export const Portfolio = () => {
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className={`p-8 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors duration-300 ${
+                className={`p-8 rounded-lg bg-[#FDF7F0] hover:bg-[#FDF7F0] transition-colors duration-300 ${
                   inView ? 'animate-fade-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
